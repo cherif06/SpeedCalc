@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="style.css">
+    <script src="popup.js" defer></script>
+    <script src="index.js" defer></script>
+    <script src="https://kit.fontawesome.com/daeaf1a76d.js" crossorigin="anonymous"></script>
+    <title>SpeedCalc</title>  
+</head>
+<body>
+    <div id="presentation"><button type="button" id="Commencer">Commencer</button></div>
+    <div id="nomjeu">
+        <h1>SpeedCalc</h1>
+        <div class="debutjeu">
+            Essayez de repondre aux 10 operations le plus rapidement possible .<br>
+        </div>
+
+        <div class="consigne">
+            <label for="reponse"><span id="motpropose"></span></label><br>
+            <input type="text" value="" id="reponse" ><br>
+            <div id="espace-chrono"><i class="fa-regular fa-clock" style="color:white ;font-size: large"></i> <span id="chrono">0:00</span></div><br>
+            <span id="recommence2"><i class="fa-sharp fa-solid fa-arrow-rotate-right" style="color:white" type="btn" ></i></span>
+            <button id="valide">Valider</button><br>
+            <button id="recommence"><i class="fa-sharp fa-solid fa-arrow-rotate-right" style="color:rgb(42, 49, 43)"></i> Recommencer</button>
+            <button id="partager"><i class="fa-solid fa-share" style="color:rgb(42, 49, 43)"></i> Partager</button><br>
+            <span id="pscore">Votre score : <span id="score"></span></span>
+        </div>
+    </div>
+    <div id="partiepopup">
+        <i type="button" id="quitterpartage" class="fa-solid fa-xmark"></i>
+        <div id="popup">
+            <h2>Partager votre score</h2>
+            <form action="">
+                <label for="nom">Votre nom :</label><br>
+                <input type="text" id="nom"><br>
+                <label for="email">Avec qui voulez-vous partager votre score :</label><br>
+                <input type="email" name="" id="email"><br>
+                <span id="messageerreur"></span><br>
+                <button type="submit">envoyer mon score</button>
+            </form>
+        </div>
+    </div>
+    <div id="footer">@copyright :Cherif Bakhoum</div>
+</body>
+</html>
